@@ -13,8 +13,9 @@
 | [Estudiante 1]  | 123456 | [Líder/Colab.] | [correo1@institucion.edu] |
 | [Estudiante 2]  | 123457 | [Colaborador]  | [correo2@institucion.edu] |
 | [Estudiante 3]  | 123458 | [Colaborador]  | [correo3@institucion.edu] |
-
+| [Miguel Angel Arboleda Grueso]       | 2160253 | [Colaborador]  | [miguel.arboleda@correounivalle.edu.co]  |
 ---
+
 
 ## 📌 Descripción de la Asignación
 
