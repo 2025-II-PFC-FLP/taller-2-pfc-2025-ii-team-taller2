@@ -5,26 +5,35 @@ q
 ## Definición del Algoritmo
 
 ```Scala
-  def grande(d: Int, e: Int): ConjDifuso = {
-  //d representa que tan rapido crece la curva
-  //e representa que tan curva es la subida de los porcentajes de pertenecia
-
-  def funcion (n:Int): Double = {
-    val exprecion = n.toDouble / (n + d)
-    @tailrec
-    def potencia(e: Int)(acc: Double): Double = {
-      //n es el valor que se desea evaluar
-      e match {
-        case 0 => acc
-        case e => potencia (e - 1)(acc * exprecion )
+    def grande(d: Int, e: Int): ConjDifuso = {
+      // d representa qué tan rápido crece la curva
+      // e representa qué tan pronunciada es la subida de los porcentajes de pertenencia
+      // Se asume e >= 0 para que la potencia esté bien definida
+      if (e < 0) {
+        throw new IllegalArgumentException("El exponente e debe ser no negativo (e >= 0)")
       }
+    
+      def funcion(n: Int): Double = {
+        if (n + d == 0) {
+          // setear a 0.0 ,los casos donde la funcion no esta definida
+          0.0
+        } else {
+          val expresion = n.toDouble / (n + d)
+          @tailrec
+          def potencia(i: Int, acc: Double): Double = {
+            // Calcula (n / (n + d))^e usando recursión de cola
+            // n es el valor que se desea evaluar
+            i match {
+              case 0 => acc
+              case _ => potencia(i - 1, acc * expresion)   
+            }
+          }
+          potencia(e, 1.0)
+        }
+      }
+      funcion  // Se retorna la función como un conjunto difuso (Int => Double)
     }
-    potencia(e)(1.0)
-  }
-  funcion
-  //se retorna la funcion como un conjunto debido a que por definicion es una funcion
-  //que recibe un entero y retorna un Double
-}
+
 ```
 
 - La función `grande ` construye un conjunto difuso `funcion` apartir de dos enteros `d` y `e` utilizando **recursión de cola**.
