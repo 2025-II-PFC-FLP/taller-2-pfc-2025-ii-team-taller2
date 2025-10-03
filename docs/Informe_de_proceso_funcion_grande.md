@@ -1,6 +1,6 @@
 q
 
-# Informe de proceso funcion Grande para conjuntos difucos con potencia por Recursión de Cola
+# Informe de proceso funcion Grande para conjuntos difusos con potencia por Recursión de Cola
 
 ## Definición del Algoritmo
 
