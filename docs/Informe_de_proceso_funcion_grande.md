@@ -39,7 +39,7 @@ q
 - La función `grande ` construye un conjunto difuso `funcion` apartir de dos enteros `d` y `e` utilizando **recursión de cola**.
 - La función interna `potencia` es la que hace la recursión:
   - Recibe dos parámetros:
-    - `e`: el valor actual decreciente hasta llegar a 0.
+    - `i`: el valor actual decreciente hasta llegar a 0.
     - `acumulador`: donde se guarda el resultado parcial en cada paso.
 
 - El decorador `@annotation.tailrec` obliga a que la función sea optimizada como recursión de cola, es decir, **no se acumulan llamados en la pila**.
@@ -52,17 +52,17 @@ q
  case 0 => acc
 ```
 
-Cuando `e` llega a `0`, la función retorna directamente el valor acumulado, evitando llamadas adicionales.
+Cuando `i` llega a `0`, la función retorna directamente el valor acumulado, evitando llamadas adicionales.
 
 ### Caso recursivo
 
 ```Scala
-case e => potencia (e - 1)(acc * exprecion )
+case _ => potencia (i- 1)(acc * exprecion )
 ```
 
 En cada llamada:
 
-- Se reduce el valor de `e` en 1.
+- Se reduce el valor de `i` en 1.
 - Se multiplica el acumulador por la expreción `n.toDouble / (n + d)`, que corresponde a la base del conjunto grande, y se pasa a la siguiente iteración.
 - Como es recursión de cola, la llamada recursiva es la **última instrucción** en ejecutarse, lo que permite a Scala optimizar la pila.
 
@@ -122,10 +122,10 @@ sequenceDiagram
     participant L1 as potencia(2,1.0)
     participant L2 as potencia(1 , n.toDouble / (n + d))
     participant L3 as potencia(0, (n.toDouble / (n + d)) * (n.toDouble / (n + d)))
-
+    
     Main->>L1: llamada inicial
     L1->>L2: tail call con (2, 1.0)
     L2->>L3: tail call con (1, n.toDouble / (n + d))
-    L3->>L4: tail call con (1, (n.toDouble / (n + d)) * (n.toDouble / (n + d)))
-    L4-->>Main: return 120
+    L3->>Main: return (n.toDouble / (n + d)) * (n.toDouble / (n + d))
+   
 ```
