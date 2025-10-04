@@ -54,11 +54,14 @@ class ConjuntosDifusos {
     // Implementaci´on de la funci´on union
 
   }
-  def interseccion(cd1: ConjDifuso, cd2: ConjDifuso): ConjDifuso = {
 
-    // Implementaci´on de la funci´on interseccion
+  def Interseccion(cd1: ConjDifuso, cd2: ConjDifuso): ConjDifuso = {
+
+    n => math.min(cd1(n), cd2(n))
 
   }
+
+
   def inclusion(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
 
     // Implementaci´on de la funci´on inclusion
@@ -67,8 +70,6 @@ class ConjuntosDifusos {
   def igualdad(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
 
     // Implementaci´on de la funci´on igualdad
-
-
   }
 
 }
