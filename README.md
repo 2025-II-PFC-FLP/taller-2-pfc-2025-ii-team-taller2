@@ -8,12 +8,12 @@
 
 ## 👥 Integrantes del Grupo
 
-| Nombre Completo                 | Código  | Rol            | Correo Electrónico                      |
-|---------------------------------|---------| -------------- |-----------------------------------------|
-| [Estudiante 1]                  | 123456  | [Líder/Colab.] | [correo1@institucion.edu]               |
-| [Josue Jacinto Zambrano Loaiza] | 2380741 | [Colaborador]  | [josue.zambrano@correounivalle.edu.co]  |
-| [Diego Andres Bolaños Isiquita] | 2379918 | [Colaborador]  | [diego.isiquita@correounivalle.edu.co]  |
-| [Miguel Angel Arboleda Grueso]  | 2160253 | [Colaborador]  | [miguel.arboleda@correounivalle.edu.co] |
+| Nombre Completo                      | Código  | Rol            | Correo Electrónico                       |
+|--------------------------------------|---------| -------------- |------------------------------------------|
+| [Santiago Alexander Criollo ordoñez] | 2380661 | [Líder/Colab.] | [santiago.criollo@correounivalle.edu.co] |
+| [Josue Jacinto Zambrano Loaiza]      | 2380741 | [Colaborador]  | [josue.zambrano@correounivalle.edu.co]   |
+| [Diego Andres Bolaños Isiquita]      | 2379918 | [Colaborador]  | [diego.isiquita@correounivalle.edu.co]   |
+| [Miguel Angel Arboleda Grueso]       | 2160253 | [Colaborador]  | [miguel.arboleda@correounivalle.edu.co]  |
 ---
 
 
