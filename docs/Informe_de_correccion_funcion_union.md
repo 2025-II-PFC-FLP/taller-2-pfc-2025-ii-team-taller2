@@ -71,3 +71,4 @@ $$
 $$
 - La implementación es correcta porque utiliza `math.max` para calcular la unión de los grados de pertenencia, alineándose con la definición teórica de unión en conjuntos difusos.
 - No se introducen errores adicionales, y la función respeta las propiedades de los conjuntos difusos siempre que los parámetros de entrada sean válidos.
+- 
