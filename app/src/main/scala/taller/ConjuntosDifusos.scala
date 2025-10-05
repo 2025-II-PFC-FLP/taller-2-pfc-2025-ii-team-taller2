@@ -62,11 +62,13 @@ class ConjuntosDifusos {
   }
 
 
-  /*def inclusion(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
+  def inclusion(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
+    val elements = -10 to 10 // Rango de prueba
+    elements.forall(n => cd1(n) <= cd2(n))
 
-    // Implementaci´on de la funci´on inclusion
 
   }
+  /*
   def igualdad(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
 
     // Implementaci´on de la funci´on igualdad
