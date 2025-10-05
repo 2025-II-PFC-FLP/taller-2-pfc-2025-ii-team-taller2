@@ -7,7 +7,6 @@ import org.scalatestplus.junit.JUnitRunner
 class InterseccionTest extends AnyFunSuite {
   val objInter = new ConjuntosDifusos()
   //assert(SplitAlgorithm.multiply(listA(i), listB(i)) == listA(i) * listB(i))
-  def approxEqual(a: Double, b: Double, eps: Double = 1e-2): Boolean = (a - b).abs < eps
 
   test("Interseccion con argumento de 1 devuelve el mínimo") {
 

@@ -49,9 +49,9 @@ class ConjuntosDifusos {
     //retorna un conjunto difuso complemento del ingresado
   }
 
-  def union(cd1: ConjDifuso, cd2: ConjDifuso): ConjDifuso = {
+  def Union(cd1: ConjDifuso, cd2: ConjDifuso): ConjDifuso = {
 
-    // Implementaci´on de la funci´on union
+    n => math.max(cd1(n), cd2(n))
 
   }
 
@@ -62,7 +62,7 @@ class ConjuntosDifusos {
   }
 
 
-  def inclusion(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
+  /*def inclusion(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
 
     // Implementaci´on de la funci´on inclusion
 
@@ -70,7 +70,7 @@ class ConjuntosDifusos {
   def igualdad(cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
 
     // Implementaci´on de la funci´on igualdad
-  }
+  }*/
 
 }
 
