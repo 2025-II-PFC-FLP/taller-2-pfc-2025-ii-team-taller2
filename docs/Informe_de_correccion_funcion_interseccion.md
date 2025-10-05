@@ -1,4 +1,4 @@
-# Informe de corrección función interseccion para conjuntos difusos
+1. # Informe de corrección función interseccion para conjuntos difusos
 
 
 
